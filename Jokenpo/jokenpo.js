@@ -39,5 +39,12 @@ function jogar(){
         ){
             document.getElementById("placar").innerHTML = "Você venceu!!!"
         }
+        else{
+            document.getElementById("placar").innerHTML = "Computador venceu!!!"
+        }
     }
 }
+    function resetar(){
+        document.getElementById("pc").src ="pc.png";
+        document.getElementById("pc").innerHTML ="";
+    }
