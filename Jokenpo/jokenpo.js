@@ -3,9 +3,11 @@ function jogar(){
     && document.getElementById("papel").checked == false
     && document.getElementById("tesoura").checked == false
     )
-{
+
+    {
     alert("Selecione uma função")
-    }else{
+    }
+    else{
         //Logica principal
         var sorteio = Math.floor(Math.random()* 3);
         switch(sorteio){
@@ -23,7 +25,7 @@ function jogar(){
         }
         //Verifica o vencedor ou declara o empate
 
-        else if((document.getElementById("pedra").checked == true && sorteio == 0)
+        if((document.getElementById("pedra").checked == true && sorteio == 0)
         || (document.getElementById("papel").checked == true && sorteio == 1)
         || (document.getElementById("tesoura").checked == true && sorteio == 2)   
         )
